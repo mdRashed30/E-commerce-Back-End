@@ -8,11 +8,11 @@ router.get('/', (req, res) => {
   // find all products
   Product.findAll({
     // be sure to include its associated Category and Tag data
+
     include: [{ model: Category }, { model: Tag }]
   })
     .then(productData => res.json(productData))
     .catch(err => {
-      // console.log(err);
       res.status(500).json(err);
     });
 });
@@ -108,7 +108,7 @@ router.put('/:id', (req, res) => {
 });
 
 router.delete('/:id', (req, res) => {
-  // delete one product by its `id` value
+  // delete one product by `id` value
   Product.destroy({
     where: {
       id: req.params.id
