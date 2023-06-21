@@ -47,27 +47,31 @@ router.post('/', async (req, res) => {
   }
 })
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', (req, res) => {
   // update a category by its `id` value
-  try {
-    categoryData = await Category.update(req.body, {
+  Category.update({
+    category_name: req.body.category_name,
+  },
+    {
       where: {
         id: req.params.id,
       }
     })
-    if (categoryData === 0) {
-      res.status(400).json({ message: "404 error not found" });
-      return;
-    }
-    res.status(200).json(categoryData);
-  } catch (err) {
-    res.status(500).json(err)
-  }
-
+    .then(categoryData => {
+      if (!categoryData) {
+        res.status(404).json({ massage: 'No Category found with this id' });
+        return;
+      }
+      res.json(categoryData);
+    })
+    .catch(err => {
+      // console.log(err);
+      res.status(500).json(err);
+    });
 });
 
 router.delete('/:id', async (req, res) => {
-  // delete a category by its `id` value
+  // delete a category by its id' value
   try {
     const categoryData = await Category.destroy({
       where: {
