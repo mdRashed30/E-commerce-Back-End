@@ -10,7 +10,7 @@ This app is the backend part of an E-Commerce website. Express.js was used for t
 1. [The Task](#the-task)
 2. [Install](#install)
 3. [Languages Used](#languages-used)
-4. [Screenshots](#screenshots)
+4. [Video](#Video)
 5. [Links](#links)
 6. [acknowledgements](#acknowledgements)
 7. [credit](#credit)
@@ -43,24 +43,32 @@ This app is the backend part of an E-Commerce website. Express.js was used for t
 
 Steps to run application :
 
-1. Run npm install to install all dependencies
-2. Run schema.sql in MySQLWorkbench
+1. Run mysql -u root -p in terminal and use password to log in.
+2. source db/schema.sql in mysql shell
+3. npm run seed in terminal
+4. node server.js in Terminal
+5. use Insominia to interact the different routes
 
 ## Languages Used
 
-1. node.js
-
-2. MySQLWorkbench
+- HTML
+- CSS
+- JavaScript
+- Express.js
+- node.js
+- MySql
+- dotenv
+- Sequelize
 
 </br>
 
 ## Video:
 
-[Employee-Tracker](https://drive.google.com/file/d/1ut1vZBxpnSMLGjwTx_naPTxoQ_I2snwF/view?usp=sharing)
+[E-Commerce-Back-End](https://drive.google.com/file/d/1shPLQNBYCUnUURngSNBL77dewy4L4ZcK/view)
 
 ## links
 
-- [Github Repo](https://github.com/mdRashed30/employee-tracker)
+- [Github Repo](https://github.com/mdRashed30/E-commerce-Back-End)
 
 ## acknowledgements :
 
