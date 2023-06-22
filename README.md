@@ -25,6 +25,8 @@ This app is the backend part of an E-Commerce website. Express.js was used for t
 - I WANT a back end for my e-commerce website that uses the latest technologies <br>
 - SO THAT my company can compete with other e-commerce companies.
 
+<hr>
+
 ### Acceptance Criteria
 
 - GIVEN a functional Express.js API <br>
@@ -39,6 +41,8 @@ This app is the backend part of an E-Commerce website. Express.js was used for t
 - WHEN I test API POST, PUT, and DELETE routes in Insomnia Core <br>
 - THEN I am able to successfully create, update, and delete data in my database <br>
 
+<hr>
+
 ## Install
 
 Steps to run application :
@@ -49,26 +53,29 @@ Steps to run application :
 4. node server.js in Terminal
 5. use Insominia to interact the different routes
 
+<hr>
+
 ## Languages Used
 
-- HTML
-- CSS
-- JavaScript
 - Express.js
 - node.js
 - MySql
 - dotenv
 - Sequelize
 
-</br>
+<hr>
 
 ## Video:
 
 [E-Commerce-Back-End](https://drive.google.com/file/d/1shPLQNBYCUnUURngSNBL77dewy4L4ZcK/view)
 
+<hr>
+
 ## links
 
 - [Github Repo](https://github.com/mdRashed30/E-commerce-Back-End)
+
+<hr>
 
 ## acknowledgements :
 
@@ -76,10 +83,13 @@ Steps to run application :
 
 -- TA
 
+<hr>
+
 ## Credit:
 
 Special thanks to my friends who help me -
 
 -- Indrojit Ghosh
+
 -- Peter S
-<br>
+<
