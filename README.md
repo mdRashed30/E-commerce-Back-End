@@ -81,5 +81,5 @@ Steps to run application :
 Special thanks to my friends who help me -
 
 -- Indrojit Ghosh
--- Zuberi Ash
+-- Peter S
 <br>
